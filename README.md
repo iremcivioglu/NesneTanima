@@ -17,4 +17,8 @@ https://drive.google.com/file/d/1xWM9Q1XdGGXDBz52aVFF2IvoJlhIsD3f/view?usp=shari
  komutu ile programı çalıştırın.
  
 
-![Çıktı](https://mega.nz/file/np8HQaLK#7x1Jy_E13MDHUypTXYT75AVeYd2a6SubE9MrXt8JXV4)
+![](https://github.com/iremcivioglu/NesneTanima/blob/master/projephotos/1.png)
+
+Çıktı:
+
+![](https://github.com/iremcivioglu/NesneTanima/blob/master/projephotos/2.png)
