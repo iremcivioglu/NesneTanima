@@ -12,7 +12,7 @@ https://drive.google.com/file/d/1xWM9Q1XdGGXDBz52aVFF2IvoJlhIsD3f/view?usp=shari
 
      veya
  
- ![nesne_tanima.exe](https://drive.google.com/file/d/120NSXqI1P87zlT8vJ5rBBH4QCe1HfEa5/view?usp=sharing) dosyasını indirdiyseniz;
+ [nesne_tanima.exe](https://drive.google.com/file/d/120NSXqI1P87zlT8vJ5rBBH4QCe1HfEa5/view?usp=sharing) dosyasını indirdiyseniz;
 -   nesne_tanima.exe detect 
  komutu ile programı çalıştırın.
  
