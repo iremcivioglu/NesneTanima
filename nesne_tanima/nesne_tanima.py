@@ -16,6 +16,8 @@ def yolo():
 
 
     while t:
+        
+        # Nesne tespiti
         height, width, _ = img.shape
 
         blob = cv2.dnn.blobFromImage(img, 1 / 255, (416, 416), (0, 0, 0), swapRB=True, crop=False)
@@ -23,6 +25,7 @@ def yolo():
         layers_names = net.getUnconnectedOutLayersNames()
         outputs = net.forward(layers_names)
 
+        # Tespit edilen nesneyi ekranda belirtme, nesneyi dikdörtgen içine alma
         bounding_box = []
         confidences = []
         classIDs = []
