@@ -10,19 +10,19 @@ def yolo():
     image = input("Görüntü : ")
     img = cv2.imread(image)
     # img = cv2.resize(img, (400, 400))
-    a = True
+    t = True
 
     class_names = open("classes.txt").read().strip().split("\n")
 
 
-    while a:
+    while t:
         height, width, _ = img.shape
 
         blob = cv2.dnn.blobFromImage(img, 1 / 255, (416, 416), (0, 0, 0), swapRB=True, crop=False)
         net.setInput(blob)
         layers_names = net.getUnconnectedOutLayersNames()
         outputs = net.forward(layers_names)
-#  Tespit işi burada bitti. Şimdi ekranda gösterme işlemini yapacağız
+
         bounding_box = []
         confidences = []
         classIDs = []
@@ -45,7 +45,7 @@ def yolo():
                     confidences.append((float(confidence)))
                     classIDs.append(class_id)
 
-        index = cv2.dnn.NMSBoxes(bounding_box, confidences, 0.5, 0.4)  # 0.4 NMS Threshold dur. Bu değerin altında olan kuruları siliyoruz.
+        index = cv2.dnn.NMSBoxes(bounding_box, confidences, 0.5, 0.4) 
 
         for i in range(len(bounding_box)):
             if i in index:
@@ -56,7 +56,7 @@ def yolo():
                 cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 255), 2)
                 cv2.putText(img, label + " " + confidence, (x, y + int(1.15*h)), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
 
-            a = False
+            t = False
 
             cv2.imshow("Goruntu", img)
             cv2.waitKey(0)
